@@ -21,7 +21,7 @@ jQuery(function($) {
         ym = $(this).find('a').attr('href');
         ym_str = ym.replace(/\/archive\//, '');
         count = $(this).find('span').html();
-        return $ul.append("<li><a href=\"" + ym + "\">" + ym_str + " (" + count + ")</a></li>");
+        return $ul.prepend("<li><a href=\"" + ym + "\">" + ym_str + " (" + count + ")</a></li>");
       });
     }
   };

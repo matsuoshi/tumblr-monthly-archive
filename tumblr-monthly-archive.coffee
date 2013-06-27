@@ -20,5 +20,5 @@ jQuery ($) ->
 				ym = $(@).find('a').attr('href')
 				ym_str = ym.replace(/\/archive\//, '')
 				count = $(@).find('span').html()
-				$ul.append("<li><a href=\"#{ym}\">#{ym_str} (#{count})</a></li>")
+				$ul.prepend("<li><a href=\"#{ym}\">#{ym_str} (#{count})</a></li>")
 	xhr.send(null)
