@@ -7,7 +7,7 @@ monthly archive widget for Tumblr blog.
 
 	<div class="foo-sidebar">
 		<div id="monthly-archive"></div>
-		<script type="text/javascript " src="http://raw.github.com/matsuoshi/tumblr-monthly-archive/master/tumblr-monthly-archive.js"></script>
+		<script type="text/javascript" src="http://matsuoshi.github.io/tumblr-monthly-archive/tumblr-monthly-archive.js"></script>
 	</div>
 
 
