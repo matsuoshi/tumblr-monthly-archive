@@ -1,23 +1,13 @@
 /*
 	tumblr-monthly-archive
+	
+	ver 0.1: 2013.06.27
+	https://github.com/matsuoshi/tumblr-monthly-archive
+	http://matsuoshi.tumblr.com/
 */
 
 jQuery(function($) {
-  var getArgs, xhr;
-  getArgs = function() {
-    var args, data, tmp, val, _i, _len;
-    if (location.search.length < 1) {
-      false;
-    }
-    args = {};
-    data = location.search.substr(1).split('&');
-    for (_i = 0, _len = data.length; _i < _len; _i++) {
-      val = data[_i];
-      tmp = val.split('=');
-      args[tmp[0]] = tmp[1];
-    }
-    return args;
-  };
+  var xhr;
   xhr = new XMLHttpRequest();
   xhr.open('GET', '/archive', true);
   xhr.onreadystatechange = function() {

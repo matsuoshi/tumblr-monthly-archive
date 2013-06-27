@@ -1,21 +1,12 @@
 ###
 	tumblr-monthly-archive
+	
+	ver 0.1: 2013.06.27
+	https://github.com/matsuoshi/tumblr-monthly-archive
+	http://matsuoshi.tumblr.com/
 ###
 
 jQuery ($) ->
-	# initialize GET arguments
-	getArgs = ->
-		if location.search.length < 1
-			false
-		
-		args = {}
-		data = location.search.substr(1).split('&')
-		for val in data
-			tmp = val.split('=')
-			args[tmp[0]] = tmp[1]
-		args
-	
-	
 	# get /archive page
 	xhr = new XMLHttpRequest()
 	xhr.open 'GET', '/archive', true
